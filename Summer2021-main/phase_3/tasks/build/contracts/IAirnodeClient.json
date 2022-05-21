@@ -1,0 +1,267 @@
+{
+  "contractName": "IAirnodeClient",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "airnodeAddress",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "_airnodeAddress",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"airnodeAddress\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"_airnodeAddress\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"@api3/airnode-protocol/contracts/interfaces/IAirnodeClient.sol\":\"IAirnodeClient\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"@api3/airnode-protocol/contracts/interfaces/IAirnodeClient.sol\":{\"keccak256\":\"0x45182ee04b3e5b3c8b8ecebde0b22f08542a9997332a34666063b28d2c089766\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5779f376396a8bab543e23c06e7e26a1ee7c034c12458d41fb2e462e3f155835\",\"dweb:/ipfs/QmfEdSyWgYKUsgevY5kh5MMsLayMTcm4Jge77QfiKdYjHL\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity 0.6.12;\n\n\ninterface IAirnodeClient {\n  function airnodeAddress()\n      external\n      view\n      returns(address _airnodeAddress);\n}\n",
+  "sourcePath": "@api3/airnode-protocol/contracts/interfaces/IAirnodeClient.sol",
+  "ast": {
+    "absolutePath": "@api3/airnode-protocol/contracts/interfaces/IAirnodeClient.sol",
+    "exportedSymbols": {
+      "IAirnodeClient": [
+        248
+      ]
+    },
+    "id": 249,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 242,
+        "literals": [
+          "solidity",
+          "0.6",
+          ".12"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:23:2"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 248,
+        "linearizedBaseContracts": [
+          248
+        ],
+        "name": "IAirnodeClient",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "d0bdd66c",
+            "id": 247,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "airnodeAddress",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 243,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "110:2:2"
+            },
+            "returnParameters": {
+              "id": 246,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 245,
+                  "mutability": "mutable",
+                  "name": "_airnodeAddress",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 247,
+                  "src": "153:23:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 244,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "153:7:2",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "152:25:2"
+            },
+            "scope": 248,
+            "src": "87:91:2",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 249,
+        "src": "58:122:2"
+      }
+    ],
+    "src": "32:149:2"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "@api3/airnode-protocol/contracts/interfaces/IAirnodeClient.sol",
+      "exportedSymbols": {
+        "IAirnodeClient": [
+          248
+        ]
+      },
+      "license": "MIT"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "0.6",
+            ".12"
+          ]
+        },
+        "id": 242,
+        "name": "PragmaDirective",
+        "src": "32:23:2"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "interface",
+          "documentation": null,
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            248
+          ],
+          "name": "IAirnodeClient",
+          "scope": 249
+        },
+        "children": [
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "d0bdd66c",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "airnodeAddress",
+              "overrides": null,
+              "scope": 248,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 243,
+                "name": "ParameterList",
+                "src": "110:2:2"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "_airnodeAddress",
+                      "overrides": null,
+                      "scope": 247,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 244,
+                        "name": "ElementaryTypeName",
+                        "src": "153:7:2"
+                      }
+                    ],
+                    "id": 245,
+                    "name": "VariableDeclaration",
+                    "src": "153:23:2"
+                  }
+                ],
+                "id": 246,
+                "name": "ParameterList",
+                "src": "152:25:2"
+              }
+            ],
+            "id": 247,
+            "name": "FunctionDefinition",
+            "src": "87:91:2"
+          }
+        ],
+        "id": 248,
+        "name": "ContractDefinition",
+        "src": "58:122:2"
+      }
+    ],
+    "id": 249,
+    "name": "SourceUnit",
+    "src": "32:149:2"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.12+commit.27d51765.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.1",
+  "updatedAt": "2021-07-24T14:19:54.839Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

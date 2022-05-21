@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="artifact">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/packages/deployer/node_modules/serverless/test/fixtures/packageArtifact/artifact.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

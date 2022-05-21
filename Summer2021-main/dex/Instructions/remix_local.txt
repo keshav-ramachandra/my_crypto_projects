@@ -1,0 +1,10 @@
+sudo npm install -g @remix-project/remixd
+
+From the terminal, the command remixd -s <absolute-path-to-the-shared-folder> --remix-ide <your-remix-ide-URL-instance>
+will start remixd and will share the given folder with Remix IDE
+
+Example
+remixd -s ./contracts --remix-ide https://remix.ethereum.org/#optimize=false&runs=200&evmVersion=null&version=soljson-v0.6.6+commit.6c089d02.js
+
+
+Then in the remix web windows, clock on default workspace and select the localhost

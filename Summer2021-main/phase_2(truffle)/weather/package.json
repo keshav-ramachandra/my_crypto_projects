@@ -1,0 +1,30 @@
+{
+  "name": "airnode-starter",
+  "license": "MIT",
+  "description": "A starter project for deploying an Airnode and making requests to it",
+  "scripts": {
+    "build": "truffle compile",
+    "create-requester": "node ./scripts/create-requester.js",
+    "customize-config": "node ./scripts/customize-config.js",
+    "deploy-weather-client": "node ./scripts/deploy-weather-client.js",
+    "derive-designated-wallet-address": "node ./scripts/derive-designated-wallet-address.js",
+    "endorse-weather-client": "node ./scripts/endorse-weather-client.js", 
+    "fund-designated-wallet": "node ./scripts/fund-designated-wallet.js",
+    "fund-master-wallet": "node ./scripts/fund-master-wallet.js",
+    "generate-wallet": "node ./scripts/generate-wallet.js",
+    "make-weather-request": "node ./scripts/make-weather-request.js",
+    "update-authorizers": "node ./scripts/update-authorizers.js"
+  },
+  "dependencies": {
+    "@api3/airnode-abi": "^0.1.0",
+    "@api3/airnode-admin": "^0.1.5",
+    "@api3/airnode-protocol": "^0.1.0",
+    "web3": "^1.3.6"
+  },
+  "devDependencies": {
+    "@truffle/hdwallet-provider": "^1.4.0",
+    "chai": "^4.2.0",
+    "dotenv": "^8.2.0",
+    "ethers": "^5.0.31"
+  }
+}

@@ -1,0 +1,17 @@
+# package directories
+/node_modules
+
+# ENV variables and secrets
+.env
+
+# Log files
+*.log
+*.receipt.json
+
+# Test files
+coverage/
+coverage.json
+
+# Alternative package.json files for publishing
+# Will be removed in the future
+package.json_

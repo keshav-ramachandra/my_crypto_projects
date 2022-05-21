@@ -1,0 +1,123 @@
+
+
+//Configuration
+You need to specify the mnemonic of the wallet and the infura url inside the
+.env file of both the core and periphery folder.
+
+.env file is a hidden file, so make sure to tick the view hidden files
+
+To install truffle, npm install -g truffle.
+
+Run npm install in both the folders: core and periphery
+
+
+
+
+
+
+For factory deployment. inside the core folder
+truffle migrate --reset --network ropsten
+
+
+
+
+let acts = await web3.eth.getAccounts();
+
+let factory = await UniswapV2Factory.deployed();
+factory.INIT_CODE_PAIR_HASH()
+
+
+
+let token1 = await Token1.deployed();
+token1.address;
+
+// after deployment of router
+token1.approve(routerAddress,10000000); //100k D
+
+let token2 = await Token2.deployed();
+let token2Address = token.address;
+
+
+//after deployment of router
+token2.approve(routerAddress,10000000); //1 lakh R
+
+
+let weth = await WETH.deployed();
+
+
+
+//after deployment of router
+weth.approve(routerAddress,web3.utils.toWei('100','ether'));
+
+
+
+//not required
+weth.deposit({from : acts[0], value: web3.utils.toWei('1','ether')})
+
+
+After the factor and Weth deployment, paste the factory and weth address in the 2_deploy_contracts.js file of the periphery folder(peripherhy/migrations/2_deploy_contracts.js). Also, paste the initcode hash of the factory in the UniswapV2Library.sol file. 24th line , file location is periphery/contracts/libraries/UniswapV2Library.sol  
+
+-----------------------------------------------------------------------------------------
+
+
+
+// router 
+
+let acts = await web3.eth.getAccounts();
+let router = await UniswapV2Router02.deployed()
+
+
+let token1Address ='0xD97EcD547bb279F79c97C900d29c49412dd71EA1';
+let token2Address ='0x55F45f49f23a7d863cBd616C19BDfaE83a2f6b20';
+let wethAddress ='0x5AD39A56D3DE6f56062fa5E730aF06A000Db50d8';
+
+
+
+
+token1 and token2 liquidity
+router.addLiquidity(token1Address,token2Address,40000,30000,10000,10000,acts[0],1725325288)
+
+
+dollar and eth liquidity
+router.addLiquidity(token1Address,wethAddress,20000,web3.utils.toWei('1','ether'),10000,10000,acts[0],1725325288)
+router.addLiquidityETH(token1Address,10000,5000,10000,acts[0],1725325288,{from:acts[0],value:web3.utils.toWei('1','ether')})
+
+
+rupee and eth liquidity
+router.addLiquidity(token2Address,wethAddress,20000,web3.utils.toWei('2','ether'),10000,10000,acts[0],1725325288)
+router.addLiquidityETH(token2Address,10000,5000,10000,acts[0],1725325288,{from:acts[0],value:web3.utils.toWei('1','ether')})
+
+swap dollar for rupee
+await router.swapExactTokensForTokens(10000,3000,[token1Address,token2Address],acts[0],1725327996)
+
+
+
+will pass ether amount, get dollar estimate
+const est_doll_amount = await router.getAmountsOut(web3.utils.toWei('1','ether'),[wethAddress , token1Address])
+est_doll_amount[1].toString(); //will give the dollar estimate
+
+
+///swap exact eth for dollars
+//swapExactETHForTokens(uint amountOutMin, address[] calldata path, address to, uint deadline)
+router.swapExactETHForTokens(1,[wethAddress , token1Address],acts[0],1725327996,{from:acts[0],value:web3.utils.toWei('1','ether')})
+
+
+
+
+//will pass dollar, how much ether
+const est_eth_amount = await router.getAmountsOut(10000,[token1Address,wethAddress])
+est_eth_amount[1].toString()
+
+
+
+//swap exact dollars for eth
+//swapExactTokensForETH(uint amountIn, uint amountOutMin, address[] calldata path
+router.swapExactTokensForETH(10000,1,[token1Address,wethAddress],acts[0],1725327996)
+
+
+
+
+
+
+
+

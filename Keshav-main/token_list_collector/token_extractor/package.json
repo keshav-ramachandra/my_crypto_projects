@@ -1,0 +1,17 @@
+{
+  "name": "tokens",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tokens.js",
+  "scripts": {
+    "start": "node tokens.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "request": "^2.88.2",
+    "web3": "^1.6.1"
+  }
+}

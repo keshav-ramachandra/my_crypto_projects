@@ -1,0 +1,1477 @@
+{
+  "contractName": "AirnodeClient",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "airnodeAddress",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [],
+      "name": "airnode",
+      "outputs": [
+        {
+          "internalType": "contract IAirnode",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "airnodeAddress",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "_airnodeAddress",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"airnodeAddress\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[],\"name\":\"airnode\",\"outputs\":[{\"internalType\":\"contract IAirnode\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"airnodeAddress\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"_airnodeAddress\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"airnodeAddress()\":{\"returns\":{\"_airnodeAddress\":\"Airnode contract address\"}},\"constructor\":{\"details\":\"Airnode address is set at deployment. If you need to be able to update it, you will have to implement that functionality (and probably put it behind onlyOwner).\",\"params\":{\"airnodeAddress\":\"Airnode contract address\"}}},\"title\":\"The contract to be inherited from to use Airnode to make requests\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"airnodeAddress()\":{\"notice\":\"Returns the Airnode contract address used by this client\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"@api3/airnode-protocol/contracts/AirnodeClient.sol\":\"AirnodeClient\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"@api3/airnode-protocol/contracts/AirnodeClient.sol\":{\"keccak256\":\"0xd04ddf98d49a53bffd7c9fadd9a989311626a5a7db93e91d709ec533b8d3c40e\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://23592be554ad63472d31672b1b8cd8f9b639cf28ed96d10092b687291d9682ec\",\"dweb:/ipfs/QmV2yHvsgu4gg3VN9L9ztaAcdswBbQ9gcYhCj8QVbBTkZo\"]},\"@api3/airnode-protocol/contracts/interfaces/IAirnode.sol\":{\"keccak256\":\"0x3633bf108a9460d9ac8328882ddfaefe64e7d3e25b503aea642cf411b11eb172\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ad7d2a08fa2721bd193f2d58ce29a0abf1b4d9b357bfdc3e35a7cbd3f1f01661\",\"dweb:/ipfs/QmZqCMK52Qxe7kMMxbRZLzAKiohxET1jGxiBkrz1Nyqwkj\"]},\"@api3/airnode-protocol/contracts/interfaces/IAirnodeClient.sol\":{\"keccak256\":\"0x45182ee04b3e5b3c8b8ecebde0b22f08542a9997332a34666063b28d2c089766\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5779f376396a8bab543e23c06e7e26a1ee7c034c12458d41fb2e462e3f155835\",\"dweb:/ipfs/QmfEdSyWgYKUsgevY5kh5MMsLayMTcm4Jge77QfiKdYjHL\"]},\"@api3/airnode-protocol/contracts/interfaces/IEndpointStore.sol\":{\"keccak256\":\"0x05f163e0438d1b0e149e85a01b57adfe8ca1bbd6383aa9995f28974b3c160d92\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://122386337ba93866c7ebf404f6ddcdd78790503c4e4bb83503014f5bed0b684b\",\"dweb:/ipfs/QmPtitZDb8jiEd96RWWr2QmzrxkFVVGJ7qPDekh5nVyChg\"]},\"@api3/airnode-protocol/contracts/interfaces/IProviderStore.sol\":{\"keccak256\":\"0xddd0cdc763f155396b24755547cdbe186a0dbc36e46fc01b27840304a123da47\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a8b80bb9353aa4c38ebb74e8190fc06c2f49b3342aeb3d2e33449c8bb0287678\",\"dweb:/ipfs/QmTAayNQkRSpeQJZZ6BWJVonqz3yvgxnfndgUT4QZKS8S8\"]},\"@api3/airnode-protocol/contracts/interfaces/IRequesterStore.sol\":{\"keccak256\":\"0xbc741b5a318ba37e7071771f66e1563d8cd6aa31270ef39827301df9f1b139dc\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a3a373946b879a04d57eac138b886a69d9579d12b8f2b42b2da595e5576adc56\",\"dweb:/ipfs/QmQsz94VWH4Tegakry6HbyT2ULwggFnKWBiTfLXvppWQeF\"]},\"@api3/airnode-protocol/contracts/interfaces/ITemplateStore.sol\":{\"keccak256\":\"0x29b3b5e14d744b63e4e6fcfefdfb32d7a0ef43280218666b60c6450e2ab5a935\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://fedfd94c738c3222186cb17c5d9f3fd40402e40fd4f706dd2166e73a66da092b\",\"dweb:/ipfs/QmXCJQKYKCMGuAaBgbVXwyb1AuZt1vjE3MgiLoeEXTNiqT\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506040516101b23803806101b28339818101604052602081101561003357600080fd5b8101908080519060200190929190505050806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505061011e806100946000396000f3fe6080604052348015600f57600080fd5b506004361060325760003560e01c8063a36ff4d8146037578063d0bdd66c146069575b600080fd5b603d609b565b604051808273ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b606f60bf565b604051808273ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b60008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1690509056fea264697066735822122048ed9580d0f37a6c294e9ee4c5e52336661a6c9b5b481ca7255191e8a20cd89964736f6c634300060c0033",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060325760003560e01c8063a36ff4d8146037578063d0bdd66c146069575b600080fd5b603d609b565b604051808273ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b606f60bf565b604051808273ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b60008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1690509056fea264697066735822122048ed9580d0f37a6c294e9ee4c5e52336661a6c9b5b481ca7255191e8a20cd89964736f6c634300060c0033",
+  "immutableReferences": {},
+  "sourceMap": "214:1040:9:-:0;;;536:107;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;621:14;602:7;;:34;;;;;;;;;;;;;;;;;;536:107;214:1040;;;;;;",
+  "deployedSourceMap": "214:1040:9:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;261:23;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;779:169;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;261:23;;;;;;;;;;;;:::o;779:169::-;868:23;933:7;;;;;;;;;;;907:34;;779:169;:::o",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity 0.6.12;\n\nimport \"./interfaces/IAirnodeClient.sol\";\nimport \"./interfaces/IAirnode.sol\";\n\n\n/// @title The contract to be inherited from to use Airnode to make requests\ncontract AirnodeClient is IAirnodeClient {\n    IAirnode public airnode;\n\n    /// @dev Airnode address is set at deployment. If you need to be able to\n    /// update it, you will have to implement that functionality (and probably\n    /// put it behind onlyOwner).\n    /// @param airnodeAddress Airnode contract address\n    constructor (address airnodeAddress)\n        public\n    {\n        airnode = IAirnode(airnodeAddress);\n    }\n\n    /// @notice Returns the Airnode contract address used by this client\n    /// @return _airnodeAddress Airnode contract address\n    function airnodeAddress()\n        external\n        view\n        override\n        returns(address _airnodeAddress)\n    {\n        _airnodeAddress = address(airnode);\n    }\n\n    /// @dev Reverts if the caller is not the Airnode contract\n    /// Use it as a modifier for fulfill and error callback methods\n    modifier onlyAirnode()\n    {\n        require(\n            msg.sender == address(airnode),\n            \"Caller not the Airnode contract\"\n            );\n        _;\n    }\n}\n",
+  "sourcePath": "@api3/airnode-protocol/contracts/AirnodeClient.sol",
+  "ast": {
+    "absolutePath": "@api3/airnode-protocol/contracts/AirnodeClient.sol",
+    "exportedSymbols": {
+      "AirnodeClient": [
+        2193
+      ]
+    },
+    "id": 2194,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 2141,
+        "literals": [
+          "solidity",
+          "0.6",
+          ".12"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:23:9"
+      },
+      {
+        "absolutePath": "@api3/airnode-protocol/contracts/interfaces/IAirnodeClient.sol",
+        "file": "./interfaces/IAirnodeClient.sol",
+        "id": 2142,
+        "nodeType": "ImportDirective",
+        "scope": 2194,
+        "sourceUnit": 2389,
+        "src": "57:41:9",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "@api3/airnode-protocol/contracts/interfaces/IAirnode.sol",
+        "file": "./interfaces/IAirnode.sol",
+        "id": 2143,
+        "nodeType": "ImportDirective",
+        "scope": 2194,
+        "sourceUnit": 2381,
+        "src": "99:35:9",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 2145,
+              "name": "IAirnodeClient",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 2388,
+              "src": "240:14:9",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IAirnodeClient_$2388",
+                "typeString": "contract IAirnodeClient"
+              }
+            },
+            "id": 2146,
+            "nodeType": "InheritanceSpecifier",
+            "src": "240:14:9"
+          }
+        ],
+        "contractDependencies": [
+          2388
+        ],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 2144,
+          "nodeType": "StructuredDocumentation",
+          "src": "137:77:9",
+          "text": "@title The contract to be inherited from to use Airnode to make requests"
+        },
+        "fullyImplemented": true,
+        "id": 2193,
+        "linearizedBaseContracts": [
+          2193,
+          2388
+        ],
+        "name": "AirnodeClient",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "functionSelector": "a36ff4d8",
+            "id": 2148,
+            "mutability": "mutable",
+            "name": "airnode",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 2193,
+            "src": "261:23:9",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_IAirnode_$2380",
+              "typeString": "contract IAirnode"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 2147,
+              "name": "IAirnode",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 2380,
+              "src": "261:8:9",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IAirnode_$2380",
+                "typeString": "contract IAirnode"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 2160,
+              "nodeType": "Block",
+              "src": "592:51:9",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 2158,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 2154,
+                      "name": "airnode",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 2148,
+                      "src": "602:7:9",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_IAirnode_$2380",
+                        "typeString": "contract IAirnode"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "id": 2156,
+                          "name": "airnodeAddress",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 2151,
+                          "src": "621:14:9",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        ],
+                        "id": 2155,
+                        "name": "IAirnode",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 2380,
+                        "src": "612:8:9",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_IAirnode_$2380_$",
+                          "typeString": "type(contract IAirnode)"
+                        }
+                      },
+                      "id": 2157,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "typeConversion",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "612:24:9",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_IAirnode_$2380",
+                        "typeString": "contract IAirnode"
+                      }
+                    },
+                    "src": "602:34:9",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IAirnode_$2380",
+                      "typeString": "contract IAirnode"
+                    }
+                  },
+                  "id": 2159,
+                  "nodeType": "ExpressionStatement",
+                  "src": "602:34:9"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 2149,
+              "nodeType": "StructuredDocumentation",
+              "src": "291:240:9",
+              "text": "@dev Airnode address is set at deployment. If you need to be able to\n update it, you will have to implement that functionality (and probably\n put it behind onlyOwner).\n @param airnodeAddress Airnode contract address"
+            },
+            "id": 2161,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2152,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2151,
+                  "mutability": "mutable",
+                  "name": "airnodeAddress",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2161,
+                  "src": "549:22:9",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 2150,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "549:7:9",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "548:24:9"
+            },
+            "returnParameters": {
+              "id": 2153,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "592:0:9"
+            },
+            "scope": 2193,
+            "src": "536:107:9",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "baseFunctions": [
+              2387
+            ],
+            "body": {
+              "id": 2175,
+              "nodeType": "Block",
+              "src": "897:51:9",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 2173,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 2168,
+                      "name": "_airnodeAddress",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 2166,
+                      "src": "907:15:9",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "id": 2171,
+                          "name": "airnode",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 2148,
+                          "src": "933:7:9",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_contract$_IAirnode_$2380",
+                            "typeString": "contract IAirnode"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_contract$_IAirnode_$2380",
+                            "typeString": "contract IAirnode"
+                          }
+                        ],
+                        "id": 2170,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "lValueRequested": false,
+                        "nodeType": "ElementaryTypeNameExpression",
+                        "src": "925:7:9",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_address_$",
+                          "typeString": "type(address)"
+                        },
+                        "typeName": {
+                          "id": 2169,
+                          "name": "address",
+                          "nodeType": "ElementaryTypeName",
+                          "src": "925:7:9",
+                          "typeDescriptions": {
+                            "typeIdentifier": null,
+                            "typeString": null
+                          }
+                        }
+                      },
+                      "id": 2172,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "typeConversion",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "925:16:9",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "src": "907:34:9",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 2174,
+                  "nodeType": "ExpressionStatement",
+                  "src": "907:34:9"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 2162,
+              "nodeType": "StructuredDocumentation",
+              "src": "649:125:9",
+              "text": "@notice Returns the Airnode contract address used by this client\n @return _airnodeAddress Airnode contract address"
+            },
+            "functionSelector": "d0bdd66c",
+            "id": 2176,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "airnodeAddress",
+            "nodeType": "FunctionDefinition",
+            "overrides": {
+              "id": 2164,
+              "nodeType": "OverrideSpecifier",
+              "overrides": [],
+              "src": "843:8:9"
+            },
+            "parameters": {
+              "id": 2163,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "802:2:9"
+            },
+            "returnParameters": {
+              "id": 2167,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2166,
+                  "mutability": "mutable",
+                  "name": "_airnodeAddress",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2176,
+                  "src": "868:23:9",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 2165,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "868:7:9",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "867:25:9"
+            },
+            "scope": 2193,
+            "src": "779:169:9",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 2191,
+              "nodeType": "Block",
+              "src": "1112:140:9",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        "id": 2186,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 2180,
+                            "name": "msg",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": -15,
+                            "src": "1143:3:9",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_magic_message",
+                              "typeString": "msg"
+                            }
+                          },
+                          "id": 2181,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "sender",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "1143:10:9",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address_payable",
+                            "typeString": "address payable"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "==",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "arguments": [
+                            {
+                              "argumentTypes": null,
+                              "id": 2184,
+                              "name": "airnode",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 2148,
+                              "src": "1165:7:9",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_contract$_IAirnode_$2380",
+                                "typeString": "contract IAirnode"
+                              }
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_contract$_IAirnode_$2380",
+                                "typeString": "contract IAirnode"
+                              }
+                            ],
+                            "id": 2183,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "nodeType": "ElementaryTypeNameExpression",
+                            "src": "1157:7:9",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_address_$",
+                              "typeString": "type(address)"
+                            },
+                            "typeName": {
+                              "id": 2182,
+                              "name": "address",
+                              "nodeType": "ElementaryTypeName",
+                              "src": "1157:7:9",
+                              "typeDescriptions": {
+                                "typeIdentifier": null,
+                                "typeString": null
+                              }
+                            }
+                          },
+                          "id": 2185,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "typeConversion",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "1157:16:9",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "src": "1143:30:9",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "43616c6c6572206e6f7420746865204169726e6f646520636f6e7472616374",
+                        "id": 2187,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1187:33:9",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_13cf7514480b94739db6689b74dda13cec6603068e33850b84b0293320acfce2",
+                          "typeString": "literal_string \"Caller not the Airnode contract\""
+                        },
+                        "value": "Caller not the Airnode contract"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_13cf7514480b94739db6689b74dda13cec6603068e33850b84b0293320acfce2",
+                          "typeString": "literal_string \"Caller not the Airnode contract\""
+                        }
+                      ],
+                      "id": 2179,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        -18,
+                        -18
+                      ],
+                      "referencedDeclaration": -18,
+                      "src": "1122:7:9",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 2188,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1122:112:9",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 2189,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1122:112:9"
+                },
+                {
+                  "id": 2190,
+                  "nodeType": "PlaceholderStatement",
+                  "src": "1244:1:9"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 2177,
+              "nodeType": "StructuredDocumentation",
+              "src": "954:126:9",
+              "text": "@dev Reverts if the caller is not the Airnode contract\n Use it as a modifier for fulfill and error callback methods"
+            },
+            "id": 2192,
+            "name": "onlyAirnode",
+            "nodeType": "ModifierDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2178,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1105:2:9"
+            },
+            "src": "1085:167:9",
+            "virtual": false,
+            "visibility": "internal"
+          }
+        ],
+        "scope": 2194,
+        "src": "214:1040:9"
+      }
+    ],
+    "src": "32:1223:9"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "@api3/airnode-protocol/contracts/AirnodeClient.sol",
+      "exportedSymbols": {
+        "AirnodeClient": [
+          2193
+        ]
+      },
+      "license": "MIT"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "0.6",
+            ".12"
+          ]
+        },
+        "id": 2141,
+        "name": "PragmaDirective",
+        "src": "32:23:9"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 2389,
+          "absolutePath": "@api3/airnode-protocol/contracts/interfaces/IAirnodeClient.sol",
+          "file": "./interfaces/IAirnodeClient.sol",
+          "scope": 2194,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 2142,
+        "name": "ImportDirective",
+        "src": "57:41:9"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 2381,
+          "absolutePath": "@api3/airnode-protocol/contracts/interfaces/IAirnode.sol",
+          "file": "./interfaces/IAirnode.sol",
+          "scope": 2194,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 2143,
+        "name": "ImportDirective",
+        "src": "99:35:9"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "contractDependencies": [
+            2388
+          ],
+          "contractKind": "contract",
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            2193,
+            2388
+          ],
+          "name": "AirnodeClient",
+          "scope": 2194
+        },
+        "children": [
+          {
+            "attributes": {
+              "text": "@title The contract to be inherited from to use Airnode to make requests"
+            },
+            "id": 2144,
+            "name": "StructuredDocumentation",
+            "src": "137:77:9"
+          },
+          {
+            "attributes": {
+              "arguments": null
+            },
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "IAirnodeClient",
+                  "referencedDeclaration": 2388,
+                  "type": "contract IAirnodeClient"
+                },
+                "id": 2145,
+                "name": "UserDefinedTypeName",
+                "src": "240:14:9"
+              }
+            ],
+            "id": 2146,
+            "name": "InheritanceSpecifier",
+            "src": "240:14:9"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "functionSelector": "a36ff4d8",
+              "mutability": "mutable",
+              "name": "airnode",
+              "overrides": null,
+              "scope": 2193,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "contract IAirnode",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "IAirnode",
+                  "referencedDeclaration": 2380,
+                  "type": "contract IAirnode"
+                },
+                "id": 2147,
+                "name": "UserDefinedTypeName",
+                "src": "261:8:9"
+              }
+            ],
+            "id": 2148,
+            "name": "VariableDeclaration",
+            "src": "261:23:9"
+          },
+          {
+            "attributes": {
+              "implemented": true,
+              "isConstructor": true,
+              "kind": "constructor",
+              "modifiers": [
+                null
+              ],
+              "name": "",
+              "overrides": null,
+              "scope": 2193,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "@dev Airnode address is set at deployment. If you need to be able to\n update it, you will have to implement that functionality (and probably\n put it behind onlyOwner).\n @param airnodeAddress Airnode contract address"
+                },
+                "id": 2149,
+                "name": "StructuredDocumentation",
+                "src": "291:240:9"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "airnodeAddress",
+                      "overrides": null,
+                      "scope": 2161,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 2150,
+                        "name": "ElementaryTypeName",
+                        "src": "549:7:9"
+                      }
+                    ],
+                    "id": 2151,
+                    "name": "VariableDeclaration",
+                    "src": "549:22:9"
+                  }
+                ],
+                "id": 2152,
+                "name": "ParameterList",
+                "src": "548:24:9"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 2153,
+                "name": "ParameterList",
+                "src": "592:0:9"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "contract IAirnode"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 2148,
+                              "type": "contract IAirnode",
+                              "value": "airnode"
+                            },
+                            "id": 2154,
+                            "name": "Identifier",
+                            "src": "602:7:9"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "isStructConstructorCall": false,
+                              "lValueRequested": false,
+                              "names": [
+                                null
+                              ],
+                              "tryCall": false,
+                              "type": "contract IAirnode",
+                              "type_conversion": true
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": [
+                                    {
+                                      "typeIdentifier": "t_address",
+                                      "typeString": "address"
+                                    }
+                                  ],
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 2380,
+                                  "type": "type(contract IAirnode)",
+                                  "value": "IAirnode"
+                                },
+                                "id": 2155,
+                                "name": "Identifier",
+                                "src": "612:8:9"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 2151,
+                                  "type": "address",
+                                  "value": "airnodeAddress"
+                                },
+                                "id": 2156,
+                                "name": "Identifier",
+                                "src": "621:14:9"
+                              }
+                            ],
+                            "id": 2157,
+                            "name": "FunctionCall",
+                            "src": "612:24:9"
+                          }
+                        ],
+                        "id": 2158,
+                        "name": "Assignment",
+                        "src": "602:34:9"
+                      }
+                    ],
+                    "id": 2159,
+                    "name": "ExpressionStatement",
+                    "src": "602:34:9"
+                  }
+                ],
+                "id": 2160,
+                "name": "Block",
+                "src": "592:51:9"
+              }
+            ],
+            "id": 2161,
+            "name": "FunctionDefinition",
+            "src": "536:107:9"
+          },
+          {
+            "attributes": {
+              "baseFunctions": [
+                2387
+              ],
+              "functionSelector": "d0bdd66c",
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "airnodeAddress",
+              "scope": 2193,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "@notice Returns the Airnode contract address used by this client\n @return _airnodeAddress Airnode contract address"
+                },
+                "id": 2162,
+                "name": "StructuredDocumentation",
+                "src": "649:125:9"
+              },
+              {
+                "attributes": {
+                  "overrides": [
+                    null
+                  ]
+                },
+                "id": 2164,
+                "name": "OverrideSpecifier",
+                "src": "843:8:9"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 2163,
+                "name": "ParameterList",
+                "src": "802:2:9"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "_airnodeAddress",
+                      "overrides": null,
+                      "scope": 2176,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 2165,
+                        "name": "ElementaryTypeName",
+                        "src": "868:7:9"
+                      }
+                    ],
+                    "id": 2166,
+                    "name": "VariableDeclaration",
+                    "src": "868:23:9"
+                  }
+                ],
+                "id": 2167,
+                "name": "ParameterList",
+                "src": "867:25:9"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "address"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 2166,
+                              "type": "address",
+                              "value": "_airnodeAddress"
+                            },
+                            "id": 2168,
+                            "name": "Identifier",
+                            "src": "907:15:9"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "isStructConstructorCall": false,
+                              "lValueRequested": false,
+                              "names": [
+                                null
+                              ],
+                              "tryCall": false,
+                              "type": "address",
+                              "type_conversion": true
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": [
+                                    {
+                                      "typeIdentifier": "t_contract$_IAirnode_$2380",
+                                      "typeString": "contract IAirnode"
+                                    }
+                                  ],
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "type": "type(address)"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "name": "address",
+                                      "type": null
+                                    },
+                                    "id": 2169,
+                                    "name": "ElementaryTypeName",
+                                    "src": "925:7:9"
+                                  }
+                                ],
+                                "id": 2170,
+                                "name": "ElementaryTypeNameExpression",
+                                "src": "925:7:9"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 2148,
+                                  "type": "contract IAirnode",
+                                  "value": "airnode"
+                                },
+                                "id": 2171,
+                                "name": "Identifier",
+                                "src": "933:7:9"
+                              }
+                            ],
+                            "id": 2172,
+                            "name": "FunctionCall",
+                            "src": "925:16:9"
+                          }
+                        ],
+                        "id": 2173,
+                        "name": "Assignment",
+                        "src": "907:34:9"
+                      }
+                    ],
+                    "id": 2174,
+                    "name": "ExpressionStatement",
+                    "src": "907:34:9"
+                  }
+                ],
+                "id": 2175,
+                "name": "Block",
+                "src": "897:51:9"
+              }
+            ],
+            "id": 2176,
+            "name": "FunctionDefinition",
+            "src": "779:169:9"
+          },
+          {
+            "attributes": {
+              "name": "onlyAirnode",
+              "overrides": null,
+              "virtual": false,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "@dev Reverts if the caller is not the Airnode contract\n Use it as a modifier for fulfill and error callback methods"
+                },
+                "id": 2177,
+                "name": "StructuredDocumentation",
+                "src": "954:126:9"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 2178,
+                "name": "ParameterList",
+                "src": "1105:2:9"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "tryCall": false,
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_bool",
+                                  "typeString": "bool"
+                                },
+                                {
+                                  "typeIdentifier": "t_stringliteral_13cf7514480b94739db6689b74dda13cec6603068e33850b84b0293320acfce2",
+                                  "typeString": "literal_string \"Caller not the Airnode contract\""
+                                }
+                              ],
+                              "overloadedDeclarations": [
+                                -18,
+                                -18
+                              ],
+                              "referencedDeclaration": -18,
+                              "type": "function (bool,string memory) pure",
+                              "value": "require"
+                            },
+                            "id": 2179,
+                            "name": "Identifier",
+                            "src": "1122:7:9"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "commonType": {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                              },
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "operator": "==",
+                              "type": "bool"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "member_name": "sender",
+                                  "referencedDeclaration": null,
+                                  "type": "address payable"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": -15,
+                                      "type": "msg",
+                                      "value": "msg"
+                                    },
+                                    "id": 2180,
+                                    "name": "Identifier",
+                                    "src": "1143:3:9"
+                                  }
+                                ],
+                                "id": 2181,
+                                "name": "MemberAccess",
+                                "src": "1143:10:9"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "isStructConstructorCall": false,
+                                  "lValueRequested": false,
+                                  "names": [
+                                    null
+                                  ],
+                                  "tryCall": false,
+                                  "type": "address",
+                                  "type_conversion": true
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": [
+                                        {
+                                          "typeIdentifier": "t_contract$_IAirnode_$2380",
+                                          "typeString": "contract IAirnode"
+                                        }
+                                      ],
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": true,
+                                      "lValueRequested": false,
+                                      "type": "type(address)"
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "name": "address",
+                                          "type": null
+                                        },
+                                        "id": 2182,
+                                        "name": "ElementaryTypeName",
+                                        "src": "1157:7:9"
+                                      }
+                                    ],
+                                    "id": 2183,
+                                    "name": "ElementaryTypeNameExpression",
+                                    "src": "1157:7:9"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 2148,
+                                      "type": "contract IAirnode",
+                                      "value": "airnode"
+                                    },
+                                    "id": 2184,
+                                    "name": "Identifier",
+                                    "src": "1165:7:9"
+                                  }
+                                ],
+                                "id": 2185,
+                                "name": "FunctionCall",
+                                "src": "1157:16:9"
+                              }
+                            ],
+                            "id": 2186,
+                            "name": "BinaryOperation",
+                            "src": "1143:30:9"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "43616c6c6572206e6f7420746865204169726e6f646520636f6e7472616374",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "string",
+                              "type": "literal_string \"Caller not the Airnode contract\"",
+                              "value": "Caller not the Airnode contract"
+                            },
+                            "id": 2187,
+                            "name": "Literal",
+                            "src": "1187:33:9"
+                          }
+                        ],
+                        "id": 2188,
+                        "name": "FunctionCall",
+                        "src": "1122:112:9"
+                      }
+                    ],
+                    "id": 2189,
+                    "name": "ExpressionStatement",
+                    "src": "1122:112:9"
+                  },
+                  {
+                    "id": 2190,
+                    "name": "PlaceholderStatement",
+                    "src": "1244:1:9"
+                  }
+                ],
+                "id": 2191,
+                "name": "Block",
+                "src": "1112:140:9"
+              }
+            ],
+            "id": 2192,
+            "name": "ModifierDefinition",
+            "src": "1085:167:9"
+          }
+        ],
+        "id": 2193,
+        "name": "ContractDefinition",
+        "src": "214:1040:9"
+      }
+    ],
+    "id": 2194,
+    "name": "SourceUnit",
+    "src": "32:1223:9"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.12+commit.27d51765.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.1",
+  "updatedAt": "2021-06-27T15:23:04.638Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {
+      "airnodeAddress()": {
+        "returns": {
+          "_airnodeAddress": "Airnode contract address"
+        }
+      },
+      "constructor": {
+        "details": "Airnode address is set at deployment. If you need to be able to update it, you will have to implement that functionality (and probably put it behind onlyOwner).",
+        "params": {
+          "airnodeAddress": "Airnode contract address"
+        }
+      }
+    },
+    "title": "The contract to be inherited from to use Airnode to make requests",
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "airnodeAddress()": {
+        "notice": "Returns the Airnode contract address used by this client"
+      }
+    },
+    "version": 1
+  }
+}

@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name=".serverless">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/packages/deployer/.serverless/initializeProvider.zip!/" />
+      <root url="jar://$PROJECT_DIR$/packages/deployer/.serverless/startCoordinator.zip!/" />
+      <root url="jar://$PROJECT_DIR$/packages/deployer/.serverless/callApi.zip!/" />
+      <root url="jar://$PROJECT_DIR$/packages/deployer/.serverless/processProviderRequests.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

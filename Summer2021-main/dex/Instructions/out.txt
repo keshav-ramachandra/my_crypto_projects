@@ -1,0 +1,84 @@
+ Deploying 'UniswapV2Factory'
+   ----------------------------
+   > transaction hash:    0x3926fc08f9feccdbdaf74447f9915bf9bfbaaa2f871ca07f0be27e64b57d9a71
+   > Blocks: 2            Seconds: 36
+   > contract address:    0x1eD9595f37188be5144e1F727772DE4e6C9AA65E
+   > block number:        10585730
+   > block timestamp:     1625624407
+   > account:             0xF501B6b7BC08D832a6b37B743C27e81A7fD36248
+   > balance:             3.540991287456999909
+   > gas used:            4180728 (0x3fcaf8)
+   > gas price:           1.598599355 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00668330908423044 ETH
+
+
+   Deploying 'Token1'
+   ------------------
+   > transaction hash:    0x3e8fb31bb0bb3e8d8a5ffdd763f533978354ac0d1cdc6486440ff3ce5273c4e9
+   > Blocks: 0            Seconds: 24
+   > contract address:    0xD97EcD547bb279F79c97C900d29c49412dd71EA1
+   > block number:        10585731
+   > block timestamp:     1625624410
+   > account:             0xF501B6b7BC08D832a6b37B743C27e81A7fD36248
+   > balance:             3.538891631111852049
+   > gas used:            1313435 (0x140a9b)
+   > gas price:           1.598599356 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00209965634514786 ETH
+
+
+   Deploying 'Token2'
+   ------------------
+   > transaction hash:    0x4ce8349418e3bea6927e8ae406c90d444deb7593eafadce3e2eaba3579795ab7
+   > Blocks: 1            Seconds: 40
+   > contract address:    0x55F45f49f23a7d863cBd616C19BDfaE83a2f6b20
+   > block number:        10585733
+   > block timestamp:     1625624474
+   > account:             0xF501B6b7BC08D832a6b37B743C27e81A7fD36248
+   > balance:             3.536791936399006186
+   > gas used:            1313459 (0x140ab3)
+   > gas price:           1.598599357 gwei
+   > value sent:          0 ETH
+   > total cost:          0.002099694712845863 ETH
+
+
+   Deploying 'WETH'
+   ----------------
+   > transaction hash:    0x10bcfc3626467886ea36c58ae64c757ab40ed704b70c49c483563c5ea6871671
+   > Blocks: 2            Seconds: 12
+   > contract address:    0x5AD39A56D3DE6f56062fa5E730aF06A000Db50d8
+   > block number:        10585735
+   > block timestamp:     1625624495
+   > account:             0xF501B6b7BC08D832a6b37B743C27e81A7fD36248
+   > balance:             3.535461204743830098
+   > gas used:            832436 (0xcb3b4)
+   > gas price:           1.598599358 gwei
+   > value sent:          0 ETH
+   > total cost:          0.001330731655176088 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:     0.012213391797400251 ETH
+
+Deploying 'UniswapV2Router02'
+   -----------------------------
+   > transaction hash:    0xe27edb3c47ff8e9cd5a0eb984dc5d6baea7e68415ba1bd1dcd6c3453fe40a3a9
+   > Blocks: 1            Seconds: 16
+   > contract address:    0x976F14c5a1a9A7355C84C8115c90c51362525d83
+   > block number:        10585848
+   > block timestamp:     1625625492
+   > account:             0xF501B6b7BC08D832a6b37B743C27e81A7fD36248
+   > balance:             3.511933545261042192
+   > gas used:            4707451 (0x47d47b)
+   > gas price:           1.598599377 gwei
+   > value sent:          0 ETH
+   > total cost:          0.007525328235858027 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:     0.007525328235858027 ETH

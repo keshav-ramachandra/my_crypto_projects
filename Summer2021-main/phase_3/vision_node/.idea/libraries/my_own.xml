@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="my-own">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/packages/deployer/node_modules/serverless/test/fixtures/packageArtifactInServerlessDir/my-own.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
